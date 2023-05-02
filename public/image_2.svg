@@ -60,7 +60,7 @@
     #digits > *:nth-child(5n + 3){
         animation: 4.1s float-Y-5  linear infinite reverse;
     }
-        #digits > *:nth-child(5n + 4){
+    #digits > *:nth-child(5n + 4){
         animation: 3.9s float-Y-5  linear infinite ;
     }
 
@@ -257,28 +257,6 @@
     }
 }
 
-@keyframes dashed-wiggle {
-    0% {
-        stroke-dasharray: 300;
-        stroke-dashoffset: 0;
-    }
-    25% {
-        stroke-dasharray: 300;
-        stroke-dashoffset: 150;
-    }
-    50% {
-        stroke-dasharray: 300;
-        stroke-dashoffset: 0;
-    }
-    75% {
-        stroke-dasharray: 300;
-        stroke-dashoffset: -100;
-    }
-    100% {
-        stroke-dasharray: 300;
-        stroke-dashoffset: 0;
-    }
-}
 
 
 
