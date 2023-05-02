@@ -26,3 +26,23 @@ svg {
   justify-content: center;
   gap: 40px;
 }
+.reset {
+  position: fixed;
+  top: 60px;
+  right: 60px;
+  padding: 10px 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #1a7541;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+.reset:hover {
+  background-color: #6CD88D;
+}
+.reset:active {
+  background-color: #19522a;
+}

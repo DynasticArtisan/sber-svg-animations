@@ -1,6 +1,14 @@
 import './style.css'
 
-const svg = document.querySelector('svg')
-svg.style.display = 'none'
+const images = document.querySelectorAll('img')
+const sources = []
+images.forEach(img => sources.push( img.src))
 
-window.addEventListener('load', () => svg.style.display = 'block')
+function reset(){
+    let str = "?reset=" + Math.random()
+    images.forEach((img, idx) => {
+        img.src = sources[idx] + str
+    })
+}
+
+document.querySelector('.reset').addEventListener('click', reset)
