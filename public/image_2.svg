@@ -1,5 +1,10 @@
 <svg width="1152" height="647" viewBox="0 0 1152 647" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>
+    
+    #disks {
+        opacity: 0;
+        animation: 1s appear-up 1s linear forwards;
+    }
     #disk {
         animation: 6s float-Y-10  linear infinite;
     }
@@ -8,6 +13,12 @@
     }
     #disk_3 {
         animation: 6s float-Y-10 1.2s linear infinite;
+    }
+    #dashed-line {
+        animation: 1s dashed-300 linear infinite;
+    }
+    #notebook {
+        animation: 1s appear-left linear forwards;
     }
     #line {
         animation: 3s float-angle-5  linear infinite;
@@ -27,14 +38,15 @@
     #line_6 {
         animation: 3s float-angle-5  linear infinite reverse;
     }
-    #dashed-line {
-        animation: 1s dashed-300 linear infinite;
-    }
     #point {
         animation: 6s float-angle-10  linear infinite;
     }
     #point_2 {
         animation: 6s float-Y-10  linear infinite;
+    }
+    #digits {
+        opacity: 0;
+        animation: 2s appear 1s linear forwards;
     }
     #digits > *:nth-child(5n){
         animation: 4s float-Y-5  linear infinite;
